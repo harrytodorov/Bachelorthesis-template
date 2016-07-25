@@ -1,0 +1,2 @@
+# Bachelorthesis-template
+This is the base LaTeX template for my Bachelor thesis at DHBW Stuttgart. The title page is formatted based on the rules set by the university. Although you have to keep in mind, that the main language in the work is set to German. Meaning auto generated content from LaTeX (chapter names, contents, etc.) will be in German. You could easily change that setting babel to English. For citations apa citation style is used. 
