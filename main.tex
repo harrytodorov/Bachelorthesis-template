@@ -1,0 +1,64 @@
+\documentclass[12pt, 
+               a4paper, 
+               openright,
+               abstracton]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[printonlyused]{acronym}
+\usepackage{setspace} \renewcommand{\baselinestretch}{1.5}          % use 1.5 line space (acc. DHBW Stuttgart Formalia)
+\usepackage[top=25mm, left=25mm, right=30mm, bottom=25mm]{geometry} % define margins (acc. DHBW Stuttgart Formalia)
+\usepackage[tocbib, bibnewpage]{apacite}
+\usepackage{fancyhdr}
+\usepackage[hyphens]{url}                                           % format URLs the right way
+
+\newcommand{\titleLong}{Full title of the thesis}
+\newcommand{\titleShort}{Short title of the thesis}
+\newcommand{\company}{Company}
+
+\pagestyle{fancy}                                                   % sets fancy page headers and footers
+\fancyhf{}                                                          % removes default headers and footers
+\lhead{\titleShort}
+\cfoot{\nouppercase{\leftmark}}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+    % Title page
+    \input{additional/title.tex}
+    
+    % start counting of pages <roman style>
+    \renewcommand{\thepage}{\Roman{page}}
+	\setcounter{page}{1}
+
+    % Solemn declaration
+    \input{additional/erklaerung.tex} 
+    \newpage
+    
+    \input{additional/abstract.tex}
+    \newpage
+    
+    \tableofcontents                                                % table of contents
+    \newpage
+    
+    % start counting the pages <arabic style>
+    \renewcommand{\thepage}{\arabic{page}}
+    \setcounter{page}{1}
+
+    \input{contents/01einleitung.tex}                               % Einleitung
+    \input{contents/02standtechnik.tex}                             % Stand der Technik
+    \input{contents/03anforderungsanalyse.tex}                      % Anforderungsanalyse
+    \input{contents/04erarbeitungkonzept.tex}                       % Erarbeitung eines Einführungskonzeptes
+    \input{contents/05umsetzung.tex}                                % Umsetzung des Konzeptes
+    \input{contents/06ausblick.tex}                                 % Ausblick
+    
+    \input{additional/acronyms.tex}                                 % list of acronyms
+    \listoffigures                                                  % list of figures
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    
+    \bibliographystyle{apacite}
+    \bibliography{additional/quellen.bib}
+\end{document}
