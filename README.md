@@ -1,5 +1,5 @@
 # Bachelorthesis-template
-This is the base LaTeX template for my Bachelor thesis at DHBW Stuttgart. The title page is formatted based on the rules set by the university(line spacing, page geometry, etc.). [Here](http://www.dhbw.de/fileadmin/user_upload/Dokumente/Dokumente_fuer_Studierende/Richtlinien_fuer_Bearbeitung_und_Dokumentation.pdf) is a reference at p.19 ... in German.
+This is the base LaTeX template for my Bachelor thesis at DHBW Stuttgart. The title page is formatted based on the rules set by the university(line spacing, page geometry, etc.). [Here](http://www.dhbw.de/fileadmin/user_upload/Dokumente/Dokumente_fuer_Studierende/Richtlinien_fuer_Bearbeitung_und_Dokumentation.pdf) is a reference at p.19 in German.
 
 Using this you have to keep in mind, that the main language for the work is set to German. Meaning auto generated content from LaTeX (chapter names, contents, etc.) will be in German. You could easily change that setting [babel](http://ftp.fernuni-hagen.de/ftp-dir/pub/mirrors/www.ctan.org/macros/latex/required/babel/base/babel.pdf) main language to English. For citations [apacite](http://ctan.space-pro.be/tex-archive/biblio/bibtex/contrib/apacite/apacite.pdf) citation style is used. 
 
